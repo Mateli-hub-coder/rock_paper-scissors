@@ -1,10 +1,10 @@
 'use Strict';
-const options = ['rock', 'paper', 'scissor'];
+const options = ['rock', 'paper', 'scissor']; // An array to display the gaming options
 function getComputerChoice() {
-  const choice = options[Math.floor(Math.random() * options.length)];
+  const choice = options[Math.floor(Math.random() * options.length)]; // getting the options in the array randomly
   return choice;
 }
-//round()
+// getWinner() that shows the winner
 function getWinner(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
     return 'Tie';
@@ -18,6 +18,7 @@ function getWinner(playerSelection, computerSelection) {
     return 'Computer';
   }
 }
+// playRound function that plays one round
 function playRound(playerSelection, computerSelection) {
   const result = getWinner(playerSelection, computerSelection);
   if (result == 'Tie') {
@@ -43,7 +44,7 @@ function getPlayerChoice() {
     }
   }
 }
-// PlayGame() in five rounds
+// PlayGame() that plays the game in five rounds
 function PlayGame() {
   let playerScore = 0;
   let computerScore = 0;

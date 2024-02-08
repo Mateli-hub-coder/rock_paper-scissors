@@ -60,7 +60,7 @@ function PlayGame() {
       computerScore++;
     }
   }
-  console.log('Game Over!');
+  console.log('Game is Over!');
   if (playerScore > computerScore) {
     console.log('player was the winner');
   } else if (playerScore < computerScore) {
